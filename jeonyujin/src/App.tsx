@@ -41,7 +41,7 @@ function App() {
         title="<롤링파스타>"
         feature1="파스타계 다이소"
         feature2="가격대비 가성비 bb"
-        feature3="한 번만 간 사람은 X"
+        feature3="한 번만 간 사람 X"
         location="경기 부천시 부천로9번길 24"
         imgSrc="롤링파스타.jpg"
         link="https://map.naver.com/v5/search/%EB%A1%A4%EB%A7%81%ED%8C%8C%EC%8A%A4%ED%83%80%20%EB%B6%80%EC%B2%9C%EC%97%AD/place/1294908926?c=14098373.4818820,4506996.9928822,11,0,0,0,dh&entry=plt&isCorrectAnswer=true"
