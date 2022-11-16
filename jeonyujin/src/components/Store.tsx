@@ -8,7 +8,6 @@ interface Props {
   location: string;
   imgSrc: string;
   link: string;
-
 }
 
 const Store = ({ link, title, location, imgSrc, feature1, feature2, feature3}: Props) => {
@@ -47,14 +46,23 @@ const StyledArticle = styled.article`
 `;
 
 const StyledH2 = styled.h2`
-  width: 200px;
   color: yellow;
+  margin-right: 10px;
+  text-align: center;
   text-shadow: 2px 2px 2px darkcyan;
+  &:hover {
+    transition: all 0.5s;
+    color: orange;
+  }
 `;
 
 const P = styled.p`
   font-weight: bold;
   font-size: large;
+  transition: font-size 0.1s;
+  &:hover {
+    font-size: 120%;
+  }
 `;
 
 const StyledImgWrapper = styled.div`
