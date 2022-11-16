@@ -2,24 +2,29 @@ import styled from "styled-components";
 
 interface Props {
   title: string;
-  feature: string;
+  feature1: string;
+  feature2: string;
+  feature3: string;
   location: string;
   imgSrc: string;
   link: string;
+
 }
 
-const Store = ({ title, feature, location, imgSrc, link }: Props) => {
+const Store = ({ link, title, location, imgSrc, feature1, feature2, feature3}: Props) => {
   return (
     <>
       <StyledArticle>
-        <a href={link}>
-          <StyledH2>{title}</StyledH2>
-        </a>
+        <StyledH2>{title}</StyledH2>
         <p>{location}</p>
         <StyledImgWrapper>
-          <StyledImg src={imgSrc} alt={title} />
+          <a href={link}>
+          <StyledImg src={imgSrc} alt={title}/>
+          </a>
         </StyledImgWrapper>
-        <P>{feature}</P>
+        <P>- {feature1}</P>
+        <P>- {feature2}</P>
+        <P>- {feature3}</P>
       </StyledArticle>
     </>
   );
@@ -29,7 +34,7 @@ export default Store;
 
 const StyledArticle = styled.article`
   width: 500px;
-  height: 600px;
+  height: 600;
   margin: 30px;
   padding: 10px 20px;
   background-color: #121212;
@@ -43,14 +48,13 @@ const StyledArticle = styled.article`
 
 const StyledH2 = styled.h2`
   width: 200px;
-  text-decoration: none;
-  // 하이퍼링크 색 제거가 안됌
+  color: yellow;
+  text-shadow: 2px 2px 2px darkcyan;
 `;
 
 const P = styled.p`
   font-weight: bold;
   font-size: large;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 `;
 
 const StyledImgWrapper = styled.div`
@@ -61,3 +65,4 @@ const StyledImg = styled.img`
   width: 270px;
   height: 270px;
 `;
+
